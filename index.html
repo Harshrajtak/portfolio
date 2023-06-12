@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="image/pngwing.com (5).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-family: "Ubuntu", sans-serif;
+      }
+      
+      
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 97px;
+        background-color: rgba(17, 17, 89, 0.699);
+      
+      }
+      #leftsection {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .btn {
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(77, 77, 230, 0.942);
+        background: rgba(17, 17, 89, 0.699);
+        color: rgba(77, 77, 230, 0.942);
+        cursor: pointer;
+        font-size: bolder;
+      }
+      .btn a {
+        padding: 12px;
+        text-decoration: none;
+
+        color: rgba(77, 77, 230, 0.942);
+        cursor: pointer;
+      }
+      #rightsection {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav div ul li {
+        list-style: none;
+        margin: 0 34px;
+        font-weight: bold;
+      }
+      nav div ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav div ul li a:hover {
+        font-size: 17px;
+        color: rgba(111, 111, 192, 0.837);
+      }
+      #mainsection {
+        display: flex;
+        justify-content: space-around;
+        margin: -50px 0;
+      }
+      #rightmainsection {
+        /* border: 2px solid red; */
+        height: 50%;
+        width: 50%;
+      }
+      #rightmainsection img {
+        height: 100%;
+        width: 100%;
+      }
+
+      #leftmainection {
+        /* border: 2px solid red; */
+        font-size: 3rem;
+        width: 30%;
+        margin: 173px 97px;
+        font-weight: bold;
+        /* line-height: 1.5; */
+        text-align: justify;
+      }
+      .purple {
+        color: rgba(77, 77, 230, 0.942);
+      }
+      #element {
+        color: rgba(77, 77, 230, 0.942);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: 20px 107px;
+        height: 450px;
+      }
+      .secondsection h3 {
+        font-size: 25px;
+        font-weight: 100px;
+        margin: 10px 0;
+      }
+      hr {
+        order: 0;
+        background: white;
+        height: 1px;
+        margin: 0 90px;
+      }
+      .text-purple {
+        color: rgba(77, 77, 230, 0.942);
+        margin: 20px 0;
+      }
+      .secondsection .box {
+        background: rgba(77, 77, 230, 0.942);
+        width: 80vw;
+        height: 1.5px;
+        margin: 60px 2px;
+        display: flex;
+        /* justify-content: space-around; */
+      }
+      .secondsection .vertical {
+        background-color: white;
+        height: 100px;
+        width: 1px;
+        margin: 0 143px;
+      }
+      .c_name{
+      font-weight: bolder;
+        color:rgba(77, 77, 230, 0.942) ;
+      }
+      .image_1 {
+        width: 50px;
+        position: relative;
+        top: -57px;
+        left: -24px;
+        border-radius: 25px;
+      }
+      .text {
+        position: relative;
+        top: 50px;
+        left: -6px;
+        width: 270px;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .para {
+        margin: 10px 0;
+        padding: 7px 0;
+        font-weight: normal;
+        font-size: small;
+        justify-content: center;
+      }
+      footer {
+        background-color: rgba(17, 17, 89, 0.699);
+        height: 233px;
+      }
+      .foot {
+        display: flex;
+        justify-content: space-around;
+      }
+      .firstfoot {
+        padding: 9px 86px;
+        margin: 5px 0 0 0;
+      }
+      .secondfoot {
+        padding: 5px 86px;
+      }
+      .secondfoot ul li {
+        list-style: none;
+      }
+      .thirdfoot {
+        padding: 5px 86px;
+      }
+      .thirdfoot ul li {
+        list-style: none;
+      }
+      .forthfoot {
+        padding: 5px 86px;
+      }
+      .forthfoot ul li {
+        list-style: none;
+      }
+      .foot li {
+        padding: 10px 0;
+      }
+      .img{
+        width: 20px;
+        height: 20%;
+      }
+      #textfoot {
+        text-align: center;
+        padding: 12px 0 0 0;
+        margin: 20px 0 0 0;
+        color: rgba(77, 77, 230, 0.942);
+      }
+      .links {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="leftsection">Harsh's Portfolio</div>
+        <div id="rightsection">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="mainsection">
+        <div id="leftmainection">
+          Hello, My name is
+          <span class="purple">Harsh Raj</span>
+          <div>and I am a passionate</div>
+          <!-- <div>Web Developer</div> -->
+          <span id="element"> </span>
+          <div class="button">
+            <button class="btn">
+              <a href="./image/Harsh Raj .pdf" download>Download Resume</a>
+            </button>
+            <button class="btn">
+              <a href="https://github.com/Harshrajtak" target="_blank"
+                >Visit Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <div id="rightmainsection">
+          <img
+            src="image/main .png"
+            alt="Reload"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="text-purple">What I have done so far</span>
+        <h3>Work Experience</h3>
+        <div class="box">
+          <div class="vertical">
+            <img src="./image/allised.png" alt="reload" class="image_1" />
+            <div class="text">
+              Corporate Alliance Manager <br />
+              <span>(2023-2023)</span>
+              <p class="para">
+                The Company name is  <span class="c_name">Suns Realty.</span><br>
+                During the internship I learn a lots of things.
+                A Wonderful hand-on Experience I received during this internship.
+
+              </p>
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./image/hr manager.jpg " alt="reload" class="image_1" />
+            <div class="text">
+              Hr General manager <br />
+              <span> (2022-2022)</span>
+              <p class="para">
+                The Company name is <span class="c_name">Infovirtech Private Limited.</span><br>
+                During the internship I learn how to how to hire intern by Linkedin and use of Ms-Excel,Ms-Powerpoint and Ms-Word .
+                A Wonderful hand-on Experience I received during this internship.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./image/graphic d.png" alt="reload" class="image_1" />
+            <div class="text">
+              Graphic Designer <br />
+              <span>(2022-2022)</span>
+              <p class="para">
+                The Company name is  <span class="c_name">Infovirtech Private Limited.</span><br>
+                During the internship I work's on Canvas made posters and a lot more stuff for the Company.
+                A Wonderful hand-on Experience I received during this internship.
+              </p>
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./image/hr manager.jpg" alt="reload" class="image_1" />
+            <div class="text">
+              Hr Reporting Manager <br />
+              <span>(2022-2022)</span>
+              <p class="para">
+                The Company name is <span class="c_name">Universal Tribes.</span> <br>
+                During the internship I learn how to use efficently Ms-Excel,Ms-Powerpoint and Ms-Word .
+                A Wonderful hand-on Experience I received during this internship.
+                
+               
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <div class="firstfoot">Harsh Raj's Portfolio</div>
+        <div class="secondfoot">
+          <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About me</li>
+            <li>Contact me</li>
+          </ul>
+        </div>
+        <div class="thirdfoot">
+          <ul>
+            <li>Social media</li>
+            <li>
+              <img src="./image/github.png" alt="reload"class="img">
+              <a
+                href="https://github.com/Harshrajtak"
+                target="_blank"
+                class="links"
+                >Github</a
+              >
+            </li>
+            <li>
+              
+              <img src="./image/linkedin.png" alt="Reload" class="img">
+              <a
+                href="https://www.linkedin.com/in/harsh-raj-53a008235"
+                target="_blank"
+                class="links"
+                >Linkedin</a
+              >
+            </li>
+            
+            <li>
+              <img src="./image/email.png" alt="reload"class="img">
+              <a href="mailto:harshraj@cvs.du.ac.in" target="_blank" class="links"
+                >E-mail</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="forthfoot">
+          <ul>
+            <li>Terms & policy</li>
+            <li>Terms of Service</li>
+            <li>Cookie policy</li>
+            <li>Cookie preferences</li>
+          </ul>
+        </div>
+      </div>
+      <div id="textfoot">
+        Copyright &copy; harshrajsportfolio.com | 2023 Harsh Raj | All rights
+        reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Graphic Designer.", "Web Developer."],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
